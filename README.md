@@ -5,9 +5,9 @@ This notebook looks into building a machine learning model that is capable of pr
 The Original data came from Cleavland data from the UCI Machine Learning Repository. There is also a version available from Kaggle. https://www.kaggle.com/ronitf/heart-disease-uci
 
 ## How it was made:
-1. Initially this project conducts an Exploratory Data Analysis (EDA) to determine the type of data we have, whether there was any missing data, were there any outliers and how can we add or remove features to get more out fo our data
-2. Based on the findings from the EDA, we started to model our data. For this dataset, 3 models were chosen: Logisitic Regression, KNN and Random Forest. Once these models were fitted they were compared based on accuracy. From this, logistic regression proved the be the best. We now had 3 baseline models to continue with hyperparameter tuning.
-3. In order to tune and improve our model, methods such as hyperparameter tuning were used. Hyperparameter tuning of the logisitic regression model and random forest model were conducted with RandomizedSearchCV(). Since the LogisticRegression model provided the best scores the model was tunes again using GridSearchCV().
-4. Finally, precision, recall, f1 score were calculated using cross_val_score.
+1. Initially, this project begins with Exploratory Data Analysis (EDA) to assess data type, identify missing values, detect outliers, and optimize feature selection to enhance data quality.
+2. Building on EDA insights, we applied three models—Logistic Regression, KNN, and Random Forest—to the dataset, evaluating them based on accuracy. Logistic Regression emerged as the most effective baseline model, guiding further hyperparameter optimization.
+3. Hyperparameter tuning, employing techniques like RandomizedSearchCV for Logistic Regression and Random Forest, refined model performance. The top-performing Logistic Regression model underwent additional fine-tuning using GridSearchCV.
+4. The project resulted in evaluating model performance through metrics — precision, recall, and F1 score—using cross-validation.
 
-This project was conducted through zero-to-mastery online complete AI and Machine Learning Data Science course
+This project was completed as part of the Zero-to-Mastery online AI and Machine Learning Data Science course.
